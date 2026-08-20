@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkydera — персональний трекер здоров’я очей і руху</title>
+    <style>
+        :root {
+            --primary-color: #e91e63;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header {
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .intro {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .feature {
+            margin-bottom: 80px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #eee;
+        }
+        .feature p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+        .algorithms {
+            text-align: left;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .privacy {
+            background: #fff0f5;
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 40px 0;
+        }
+        .emoji {
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="emoji">👁️</div>
+        <h1>Blinkydera</h1>
+        <p class="intro">Ваш персональний трекер здоров’я очей і руху</p>
+        <p>Ласкаво просимо до Blinkydera! Цей застосунок допоможе вам стежити за здоров’ям очей, контролювати свої звички щодо моргання та навіть працювати як інструмент для інтелектуального виявлення руху.</p>
+    </header>
+
+    <hr>
+
+    <section class="feature">
+        <h2>🎮 Blinky Game</h2>
+        <p><strong>Перевірте свою концентрацію та витривалість!</strong></p>
+        <img src="blinky-blink.png" alt="Знімок екрана Blinky Game">
+        <p>У <strong>режимі Blinky</strong> завдання просте: як довго ви зможете тримати очі відкритими? Застосунок відстежує ваші моргання в реальному часі. Якщо ви моргнете занадто багато разів, гра завершується, а її тривалість зберігається. Це веселий спосіб краще усвідомити свої природні звички щодо моргання.</p>
+    </section>
+
+    <section class="feature">
+        <h2>🏥 Тест здоров’я</h2>
+        <p><strong>Контролюйте цифрове навантаження на очі.</strong></p>
+        <img src="blinky-health.png" alt="Тест здоров’я Screenshot">
+        <p>Сучасний час перед екраном може значно зменшувати частоту моргання, що призводить до сухості та втоми очей. Наш <strong>режим здоров’я</strong> проводить 60-секундну оцінку частоти вашого моргання. Після тесту ви отримаєте персоналізовані рекомендації на основі результатів, які допоможуть підтримувати оптимальне зволоження та здоров’я очей.</p>
+    </section>
+
+    <section class="feature">
+        <h2>🕵️ Режим детектива</h2>
+        <p><strong>Перетворіть свій пристрій на інтелектуальний інструмент спостереження.</strong></p>
+        <img src="blinky-detective.png" alt="Режим детектива Screenshot">
+        <p><strong>Режим детектива</strong> leverages advanced computer vision to track motion. Whether you're monitoring a room or experimenting with tracking algorithms, this mode gives you full control. You can adjust sensitivity and choose from multiple tracking algorithms:</p>
+        <div class="algorithms">
+            <ul>
+                <li><strong>Обличчя:</strong> точне відстеження обличчя та виявлення моргання.</li>
+                <li><strong>Об’єкт:</strong> відстеження загальних рухомих об’єктів.</li>
+                <li><strong>Luma/Колір:</strong> виявлення змін рівня освітлення та колірних шаблонів.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="privacy">
+        <h2>🛡️ Конфіденційність і безпека</h2>
+        <p>Blinkydera створено з урахуванням конфіденційності. Уся обробка зображень і аналіз обличчя виконуються <strong>локально на вашому пристрої</strong>. Відео або дані про обличчя ніколи не завантажуються в хмару.</p>
+    </section>
+
+    <footer>
+        <p>Автор: Volodymyr Chornohal</p>
+    </footer>
+</div>
+
+</body>
+</html>
